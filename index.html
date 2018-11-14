@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Viychuk Home</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link href='https://fonts.googleapis.com/css?family=Antic' rel='stylesheet'>
+        <!----<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">--->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html" charset="utf-8"> 
+        <meta name="description" content="Lingerie for the special women and girls">
+        <meta name="keyword" content="Viychuk, Lingerie, clothings, bathing suits, design, fashion, girls, handmade, underwear, bra, chernivtsi, showroom, чернівці, нижня білизна, білизна, купальники, бра, хендмейд, шевченка, лівчики, трусики, жіноча, білизна, для дівчат, війчук, шоурум, ukraine, україна">
+        <meta name="Author" content="Viychuk Lingerie">
+        <meta name="robots" CONTENT="all">
+    </head>
+    
+    <body>
+        <header> 
+           <div class="nav">
+                        <div class="logo">
+                            <img id="logo" src="logo.svg">
+                        </div>
+                        <ul id="nav">
+                            <li><a class="active" href="index.html">Home</a></li>
+                            <!---<li><a href="lookbook.html">Lookbook</a></li>--->
+                            <li><a href="life.html">Life</a></li>
+                            <li><a href="girls.html">Girls</a></li>
+                            <!---<li><a href="shop.html">Shop</a></li>-->
+                            <li><a href="contacts.html">Contacts</a></li>
+                            <li><a href="https://www.instagram.com/viychuk_lingerie">Instagram</a></li>
+                        </ul>
+            </div>
+            <div id="blancfixed"></div>
+        </header>
+        <br>
+        <div class="content"> 
+            <div class="gallery"> 
+                <h4 class="center">New Collection</h4>
+                <div class="w3-content">
+                <img class="mySlides" src="homeslide (1).jpg">
+                <img class="mySlides" src="homeslide (2).jpg">
+                <img class="mySlides" src="homeslide (3).jpg">
+                <img class="mySlides" src="homeslide (4).jpg">
+                <img class="mySlides" src="homeslide (5).jpg">
+                <img class="mySlides" src="homeslide (6).jpg">
+                </div>        
+            </div>
+	        <br><br>
+        </div>
+        <br><hr>
+    
+        <footer>        
+            <p id="copyright">Copyright © 2016 Andriy Viychuk</p>
+        </footer>
+    
+
+    </body>
+</html>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
